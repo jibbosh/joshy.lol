@@ -1,0 +1,197 @@
+body {
+  background: #000;
+  background: url("https://i.ibb.co/WvnCQVy/wp3283179-oneshot-wallpapers.jpg") fixed no-repeat; /*Background and header image. Replace with your own!*/
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-family: "Droid Sans", Verdana, sans-serif;
+  line-height: 150%;
+  }
+  
+/*Some custom tweaks to various basic elements.*/
+a {
+  color: #aaf0ff; /*Used in several other places as accent color.*/
+  }
+  
+a:hover {
+  color: #e0ffff;
+  transition: ease-in 0.5s ease-out 0.5s;
+  }
+  
+b, strong {
+  color: #c0feff;
+  }
+  
+h1, h2, h3, h4, h5, .nav {
+  font-family: "Palatino", Garamond, serif;
+  }
+  
+h1, h2, h3, h4, h5 {
+  line-height: 125%;
+  }
+  
+blockquote {
+  border-left: 2px solid #aaf0ff;
+  padding: 0.1px 0.75em;
+  margin-left: 1.25em;
+  background: rgba(250,255,255,0.1);
+  }
+  
+hr {
+  margin: 1.75rem 0;
+  height: 1px;
+  border:0;
+  background: #aaf0ff;
+  }
+  
+
+/*The "header". Technically empty since it uses the same image as the background,
+but you could add a different image here if you wanted.*/
+.header-gap {
+  height: 500px;
+  }
+  
+/*Contains everything that isn't the header.*/
+.page-wrapper {
+  background: #101212;
+  background: rgba(0,2,2,0.7);
+  margin: 0 auto;
+  padding: 0.1px 0;
+  }
+  
+/*Limit the main page content to 900px column.*/
+.top-section, .main, .footer {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0.1px 0;
+  }
+  
+/*Prevent image overflow*/
+.main img, .top-section img, .footer img, .left img, .right img {
+  max-width: 100%;
+  height: auto;  
+  }
+
+/*Contains the top section.*/
+.top-section-wrapper {
+  background: rgba(0,2,2,0.7);
+  padding: 1rem 0 2rem 0;
+  }
+  
+/*Area with links, title & bio, below the header.*/
+.top-section {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 0.5rem;
+  }
+
+/*Make title/bio and links display side by side.*/
+.left, .right {
+  display: inline-block;
+  }
+
+.left h1 {
+  font-size: 1.4rem;
+  }
+
+/*Make title and links vertically aligned together.*/
+.left h1, .right {
+  padding-top: 1.35rem;
+  margin-top: 0;
+  }
+  
+.left p {
+  font-size: 0.95rem;
+  }
+
+.left {
+  width:450px;
+  }
+
+.right {
+  float: right;
+  }
+
+/*Top navigation links section*/
+.right .nav {
+  max-width: 440px;
+  text-align: right;
+  }
+  
+/*Nav links. Used in top section and footer.*/
+.nav {
+  font-size: 1.075em;
+  }
+  
+/*Nav link styling.*/
+.nav a {
+  padding: 0 0.5em 0.5em 0.5em;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  }
+  
+/*Main content div.*/
+.main {
+  padding: 1rem 0;
+  }
+  
+/*Page footer.*/
+.footer {
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 1.5rem 0 1.75rem 0;
+  border-top: 1px solid #fff;
+  }
+  
+/*Footer nav.*/
+.footer .nav a {
+  padding: 0 0.35em 0.35em 0.35em;
+  }
+  
+/*Variation for narrower screens.*/
+@media(max-width: 920px) {
+  .top-section, .main, .footer {
+    width: 800px;
+    width: calc(100vw - 2rem);
+    }
+  .left {
+      width: 425px;
+    }
+  .right .nav {
+      max-width: 365px;
+      max-width: calc(100vw - 435px - 2rem);
+    }
+  }
+  
+/*Mobile layout.*/
+@media(orientation:portrait), (max-width: 575px) {
+  .header-gap {
+    height: 60vh;
+    }
+  
+  .top-section, .left, .right .nav, .main, .footer {
+    margin: 0 auto;
+    width: auto;
+    padding:0;
+    }
+    
+  .main, .top-section, .footer {
+    margin: 0.1px 1em;
+    }
+    
+  .left, .right, .right .nav {
+    display: block;
+    text-align: center;
+    }
+    
+  .left, .right, .right .nav {
+    float: none;
+    width: 100%;
+    }
+    
+  .right .nav {
+    max-width: 100%;
+    width: 100%;
+    }
+  }
